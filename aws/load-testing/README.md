@@ -22,7 +22,7 @@ Apache Benchmark (AB) was used to generate workload against the deployed applica
 
 Apache Benchmark (`ab`) was used to generate HTTP requests against the application.
 
-![Apache Benchmark Command](ab-load-test)
+![Apache Benchmark Command](ab-load-test.png)
 
 ---
 
