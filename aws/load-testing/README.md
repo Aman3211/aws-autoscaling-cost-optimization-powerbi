@@ -1,43 +1,51 @@
 # Load Testing
 
-This section documents the application load testing performed as part of the **AWS Auto Scaling & Cost Optimization using Power BI** project.
+This section documents the load testing performed as part of the **AWS Auto Scaling & Cost Optimization using Power BI** project.
 
-Apache Benchmark (`ab`) was used to generate HTTP requests against the application and create workload for evaluating the cloud infrastructure.
-
----
+The purpose of load testing was to generate application traffic and observe how the AWS infrastructure responds to increased workload. The generated workload can be correlated with EC2 monitoring data collected through Amazon CloudWatch.
 
 ## Objective
 
-- Generate application traffic using Apache Benchmark.
-- Create workload against the deployed application.
-- Observe the effect of increased workload on the AWS infrastructure.
-- Support validation of the Auto Scaling and CloudWatch monitoring components.
+The main objectives of the load testing activity were:
 
----
+- Generate HTTP requests against the deployed application.
+- Create controlled workload on the application infrastructure.
+- Observe application and EC2 behavior under increased traffic.
+- Support validation of the Auto Scaling configuration.
+- Compare infrastructure monitoring data before and after workload generation.
 
-## Load Testing Implementation
+## Tool Used
 
-### Apache Benchmark
+### Apache Benchmark (AB)
 
-Apache Benchmark was used to send HTTP requests to the application endpoint.
+**Apache Benchmark (`ab`)** was used to generate HTTP requests against the application.
 
-![Apache Benchmark Load Test](ab-load-test.png)
+Apache Benchmark is a command-line HTTP server benchmarking tool used to send multiple requests to an application and observe its response behavior.
 
----
-
-## Testing Flow
-
-The load testing process was used to generate workload against the application:
+## Load Testing Architecture
 
 ```text
-Application
-     ↓
-Apache Benchmark
-     ↓
-HTTP Requests
-     ↓
-Application Load Balancer
-     ↓
-EC2 Instances
-     ↓
-CloudWatch Monitoring
+                    Load Generation
+                          |
+                          v
+                Apache Benchmark (ab)
+                          |
+                          | HTTP Requests
+                          v
+              Application Load Balancer
+                          |
+                          v
+                Target Group / EC2
+                          |
+                 +--------+--------+
+                 |                 |
+                 v                 v
+              EC2 Instance     EC2 Instance
+                 |                 |
+                 +--------+--------+
+                          |
+                          v
+                   Amazon CloudWatch
+                          |
+                          v
+                 CPU Utilization Data
