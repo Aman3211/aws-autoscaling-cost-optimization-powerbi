@@ -29,9 +29,9 @@ The project dashboard combines AWS infrastructure and monitoring data to provide
 
 ### 1. Auto Scaling Dashboard
 
-The Auto Scaling dashboard provides visual analysis related to the scaling activity and infrastructure capacity.
+The Auto Scaling dashboard provides visual analysis related to scaling activity and infrastructure capacity.
 
-![Auto Scaling Dashboard](dashboards/dashboard-autoscaling.png)
+![Auto Scaling Dashboard](dashboard-autoscaling.png)
 
 ---
 
@@ -39,7 +39,7 @@ The Auto Scaling dashboard provides visual analysis related to the scaling activ
 
 The cost dashboard provides visualization of AWS cost-related information used for the project's cost optimization analysis.
 
-![Cost Dashboard](dashboards/dashboard-cost.png)
+![Cost Dashboard](dashboard-cost.png)
 
 ---
 
@@ -47,7 +47,7 @@ The cost dashboard provides visualization of AWS cost-related information used f
 
 The EC2 dashboard provides visualization of EC2-related infrastructure and performance information.
 
-![EC2 Dashboard](dashboards/dashboard-ec2.png)
+![EC2 Dashboard](dashboard-ec2.png)
 
 ---
 
@@ -55,7 +55,7 @@ The EC2 dashboard provides visualization of EC2-related infrastructure and perfo
 
 The Load Balancer dashboard provides visualization of load balancer-related information and traffic analysis.
 
-![Load Balancer Dashboard](dashboards/dashboard-loadbalancer.png)
+![Load Balancer Dashboard](dashboard-loadbalancer.png)
 
 ---
 
@@ -98,24 +98,3 @@ Power BI
        |
        v
 Interactive Dashboards
-
-Technologies Used
-Microsoft Power BI
-Microsoft Excel
-Amazon EC2
-EC2 Auto Scaling
-Application Load Balancer
-Amazon CloudWatch
-AWS Billing
----
-
-## Technologies Used
-
-- Microsoft Power BI
-- Microsoft Excel
-- Amazon EC2
-- EC2 Auto Scaling
-- Application Load Balancer
-- Amazon CloudWatch
-- AWS Billing
-- AWS Management Console
