@@ -1,26 +1,49 @@
 # Amazon CloudWatch
 
-## Overview
+This section documents the Amazon CloudWatch monitoring performed as part of the **AWS Auto Scaling & Cost Optimization using Power BI** project.
 
-Amazon CloudWatch provides monitoring and observability for AWS resources and applications.
+CloudWatch was used to monitor the EC2 environment and observe CPU utilization before and after applying workload through load testing.
 
-## Purpose in This Project
+---
 
-CloudWatch was used to monitor application and EC2 workload metrics and support the Auto Scaling mechanism.
+## Objectives
 
-## Metrics
+- Monitor EC2 CPU utilization.
+- Observe application behavior under workload.
+- Compare CPU utilization before and after load testing.
+- Use monitoring data to understand workload changes and scaling behavior.
 
-Examples of metrics used for monitoring include:
+---
 
-- CPU utilization
-- Instance performance
-- Load-related metrics
-- Application workload indicators
+## CloudWatch Monitoring
 
-## Auto Scaling Integration
+### 1. CPU Utilization Before Load
 
-CloudWatch metrics can be used by Auto Scaling policies to determine when additional EC2 capacity is required or when capacity can be reduced.
+The CPU utilization of the EC2 environment was observed before applying the load.
 
-## Key Learning
+![CPU Before Load](cpu-before-load.png)
 
-I learned how CloudWatch provides monitoring data and how monitoring metrics can be integrated with Auto Scaling to create a responsive cloud infrastructure.
+---
+
+### 2. CPU Utilization After Load
+
+CPU utilization was observed again after applying workload through load testing.
+
+![CPU After Load](cpu-after-load.png)
+
+---
+
+## Monitoring Summary
+
+The CloudWatch monitoring results provide visibility into EC2 CPU utilization and help demonstrate the effect of workload on the cloud infrastructure.
+
+The monitoring data can be used alongside the Auto Scaling configuration to understand how changes in workload relate to changes in compute capacity.
+
+---
+
+## Technologies Used
+
+- Amazon CloudWatch
+- Amazon EC2
+- EC2 Auto Scaling
+- AWS Management Console
