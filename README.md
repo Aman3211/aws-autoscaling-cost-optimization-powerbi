@@ -267,7 +267,7 @@ This helped observe how the infrastructure responds to changes in workload and s
 
 ---
 
-# AWS Billing and Cost Analysis
+# AWS Billing & Cost Analysis
 
 AWS Billing information was included as part of the cost optimization analysis.
 
@@ -275,13 +275,13 @@ The billing information was used to understand AWS cost-related data and support
 
 Detailed billing documentation is available in:
 
-`billing/`
+`aws/billing/`
 
 ## Cost Dashboard
 
 The cost-related information was analyzed and visualized using Microsoft Power BI.
 
-![Cost Dashboard](billing/cost-dashboard.png)
+![Cost Dashboard](aws/billing/cost-dashboard.png)
 
 ---
 
