@@ -1,71 +1,66 @@
 # AWS Auto Scaling & Cost Optimization using Power BI
 
-## Overview
+A hands-on AWS cloud project demonstrating EC2 deployment, Application Load Balancing, Auto Scaling, CloudWatch monitoring, load testing, AWS cost analysis, and Power BI dashboard visualization.
 
-A cloud infrastructure project developed as part of my M.Sc. IT final-year
-project, focused on implementing AWS Auto Scaling and analyzing cloud
-infrastructure performance and cost using Power BI.
+---
 
-## Objectives
+## Project Overview
 
-- Automatically scale EC2 resources based on workload
-- Improve application availability using Application Load Balancer
-- Monitor infrastructure using AWS CloudWatch
-- Perform load testing using Apache Benchmark
-- Analyze CPU utilization and scaling activity
-- Visualize infrastructure metrics using Power BI
-- Analyze cloud cost optimization
+This project demonstrates the implementation and analysis of an AWS-based application environment.
 
-## AWS Architecture
+The project focuses on:
 
-The project uses:
+- Deploying applications on Amazon EC2.
+- Configuring an Application Load Balancer.
+- Implementing EC2 Auto Scaling.
+- Monitoring infrastructure using Amazon CloudWatch.
+- Performing load testing using Apache Benchmark.
+- Reviewing AWS billing and cost information.
+- Analyzing infrastructure data using Microsoft Power BI.
+- Creating dashboards for infrastructure and cost analysis.
 
-- Amazon EC2
-- AWS Auto Scaling Groups
-- Application Load Balancer
-- AWS CloudWatch
-- AWS Security Groups
-- AWS Billing / Cost Monitoring
+---
 
-## Data & Analytics
+## Project Objectives
 
-Power BI dashboards were developed to analyze:
+- Understand AWS cloud infrastructure components.
+- Deploy and manage EC2 instances.
+- Configure Application Load Balancing.
+- Implement automatic scaling based on workload.
+- Monitor EC2 performance using CloudWatch.
+- Generate workload using Apache Benchmark.
+- Analyze AWS cost-related information.
+- Visualize infrastructure and cost data using Power BI.
+- Document the complete cloud implementation and analysis.
 
-- CPU utilization
-- Running EC2 instances
-- Auto Scaling events
-- Request count
-- Network traffic
-- Load Balancer activity
-- Cloud infrastructure costs
+---
 
-## Load Testing
+## Project Architecture
 
-Apache Benchmark was used to generate concurrent requests and validate
-Auto Scaling behavior.
+The project follows an AWS infrastructure and analytics workflow:
 
-Example:
-
-ab -n 3000 -c 200 http://load-balancer-url/
-
-## Results
-
-The infrastructure successfully demonstrated:
-
-- Automatic scale-out during high workload
-- Automatic scale-in during low workload
-- Traffic distribution through Application Load Balancer
-- Real-time monitoring through CloudWatch
-- Infrastructure analysis through Power BI
-- Cost optimization through automated resource scaling
-
-## Technologies
-
-AWS | EC2 | Auto Scaling | Application Load Balancer |
-CloudWatch | Power BI | Ubuntu | Nginx | React.js | Node.js |
-Apache Benchmark | GitHub
-
-## Project Author
-
-Aman Chaudhary  
-M.Sc. Information Technology
+```text
+User / Client
+     |
+     v
+Application Load Balancer
+     |
+     v
+EC2 Auto Scaling Group
+     |
+     +------------------+
+     |                  |
+     v                  v
+EC2 Instance 1       EC2 Instance 2
+     |
+     v
+Amazon CloudWatch
+     |
+     v
+Monitoring Data
+     |
+     v
+Power BI
+     |
+     v
+Interactive Dashboards
