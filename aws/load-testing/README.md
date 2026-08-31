@@ -1,28 +1,43 @@
 # Load Testing
 
-## Overview
+This section documents the application load testing performed as part of the **AWS Auto Scaling & Cost Optimization using Power BI** project.
 
-Load testing was performed to simulate increased application workload and observe the behavior of the AWS infrastructure.
+Apache Benchmark (`ab`) was used to generate HTTP requests against the application and create workload for evaluating the cloud infrastructure.
 
-## Purpose
+---
 
-The purpose of load testing was to evaluate:
+## Objective
 
-- Application performance
-- EC2 resource utilization
-- Load Balancer traffic distribution
-- Auto Scaling behavior
-- Infrastructure response to increased workload
+- Generate application traffic using Apache Benchmark.
+- Create workload against the deployed application.
+- Observe the effect of increased workload on the AWS infrastructure.
+- Support validation of the Auto Scaling and CloudWatch monitoring components.
 
-## Testing Workflow
+---
 
-1. Generate application traffic
-2. Monitor EC2 resource utilization
-3. Observe CloudWatch metrics
-4. Monitor Auto Scaling activity
-5. Observe additional EC2 instances being launched when required
-6. Observe traffic distribution through the Load Balancer
+## Load Testing Implementation
 
-## Key Learning
+### Apache Benchmark
 
-The load testing exercise helped demonstrate how AWS compute, monitoring, load balancing, and Auto Scaling services work together under changing workloads.
+Apache Benchmark was used to send HTTP requests to the application endpoint.
+
+![Apache Benchmark Load Test](ab-load-test.png)
+
+---
+
+## Testing Flow
+
+The load testing process was used to generate workload against the application:
+
+```text
+Application
+     ↓
+Apache Benchmark
+     ↓
+HTTP Requests
+     ↓
+Application Load Balancer
+     ↓
+EC2 Instances
+     ↓
+CloudWatch Monitoring
