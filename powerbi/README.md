@@ -81,20 +81,27 @@ The file can be opened using Microsoft Power BI Desktop.
 
 The Power BI analysis is part of the overall AWS project workflow:
 
-```text
-AWS Infrastructure
-       |
-       v
-EC2 / Auto Scaling / Load Balancer
-       |
-       v
-Monitoring & Cost Data
-       |
-       v
-Dataset
-       |
-       v
-Power BI
-       |
-       v
-Interactive Dashboards
+**AWS Infrastructure**  
+↓  
+**EC2 / Auto Scaling / Load Balancer**  
+↓  
+**Monitoring & Cost Data**  
+↓  
+**Dataset**  
+↓  
+**Power BI**  
+↓  
+**Interactive Dashboards**
+
+---
+
+## Technologies Used
+
+- Microsoft Power BI
+- Microsoft Excel
+- Amazon EC2
+- EC2 Auto Scaling
+- Application Load Balancer
+- Amazon CloudWatch
+- AWS Billing
+- AWS Management Console
