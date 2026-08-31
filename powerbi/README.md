@@ -107,3 +107,15 @@ EC2 Auto Scaling
 Application Load Balancer
 Amazon CloudWatch
 AWS Billing
+---
+
+## Technologies Used
+
+- Microsoft Power BI
+- Microsoft Excel
+- Amazon EC2
+- EC2 Auto Scaling
+- Application Load Balancer
+- Amazon CloudWatch
+- AWS Billing
+- AWS Management Console
