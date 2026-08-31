@@ -149,7 +149,7 @@ Detailed implementation screenshots are available in:
 
 ### Application Load Balancer Working
 
-![ALB Working](aws/load-balancer/ALB-working.png)
+![ALB Working](aws/load-balancer/alb-working.png)
 
 ---
 
