@@ -141,7 +141,7 @@ Detailed implementation screenshots are available in:
 
 ### Application Load Balancer Configuration
 
-![ALB Created Configuration](aws/load-balancer/ALB-created-configuration.png)
+![ALB Created Configuration](aws/load-balancer/alb-created-configuration.png)
 
 ### Target Group
 
